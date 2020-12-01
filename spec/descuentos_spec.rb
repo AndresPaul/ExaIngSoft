@@ -1,12 +1,12 @@
 
 require_relative '../lib/descuentos'
-
+#calcular_precio_final(cantidad_items, precio_unitario, estado)
 describe "Descuentos" do
 
     descuento_test = Descuentos.new
 
     it 'Descuentos, si la cantidad de ítems es 1000 y UT descuento 9%:' do 
-      expect(descuento_test.calcular_precio_final(1000,10000,'UT')).to eq(90)
+      expect(descuento_test.calcular_precio_final(1000,10,'UT')).to eq(318)
     end
 
     it 'Descuentos, si la cantidad de ítems es 3000 y UT descuento 11%:' do 
